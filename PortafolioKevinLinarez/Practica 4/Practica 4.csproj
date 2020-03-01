@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75D91CC5-1AAC-40DB-AA85-DAC4C138F4B7}</ProjectGuid>
+    <ProjectGuid>{E9489C6D-CA00-4A95-8DAF-CC33145CF14E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Practica_1</RootNamespace>
-    <AssemblyName>Practica 1</AssemblyName>
+    <RootNamespace>Practica_4</RootNamespace>
+    <AssemblyName>Practica 4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
