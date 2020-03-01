@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtconfirmacion = new System.Windows.Forms.TextBox();
             this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.txtconfirmar = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.txtcorreo = new System.Windows.Forms.TextBox();
             this.lblcontraseña = new System.Windows.Forms.Label();
             this.lblcorreo = new System.Windows.Forms.Label();
+            this.error1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.error1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtconfirmacion
@@ -69,6 +72,7 @@
             this.btncancelar.TabIndex = 15;
             this.btncancelar.Text = "Cancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnaceptar
             // 
@@ -105,6 +109,10 @@
             this.lblcorreo.TabIndex = 11;
             this.lblcorreo.Text = "Correo electrónico";
             // 
+            // error1
+            // 
+            this.error1.ContainerControl = this;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +128,7 @@
             this.Controls.Add(this.lblcorreo);
             this.Name = "Form4";
             this.Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)(this.error1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +144,6 @@
         private System.Windows.Forms.TextBox txtcorreo;
         private System.Windows.Forms.Label lblcontraseña;
         private System.Windows.Forms.Label lblcorreo;
+        private System.Windows.Forms.ErrorProvider error1;
     }
 }

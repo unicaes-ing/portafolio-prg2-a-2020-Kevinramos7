@@ -79,5 +79,5 @@ namespace Practica_2
             this.Close();
         }
     }
-    }
+    
 }
