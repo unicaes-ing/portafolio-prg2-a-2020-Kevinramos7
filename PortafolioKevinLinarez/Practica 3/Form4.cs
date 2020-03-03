@@ -41,7 +41,19 @@ namespace Practica_3
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-
+            int buscar;
+            buscar = Convert.ToInt32(txtbuscar.Text);
+            for (int f = 0; f < 10; f++)
+            {
+                for (int c = 0; c < 10; c++)
+                {
+                    if (dgvnumero.Rows[f].Cells[c].Value.Equals(buscar))
+                    {
+                        dgvnumero.Rows[f].Cells[c].Style.BackColor = Color.Red;
+                    }
+                }
+            }
+            txtbuscar.Clear();
         }
     }
 }
